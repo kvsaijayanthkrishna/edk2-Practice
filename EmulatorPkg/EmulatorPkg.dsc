@@ -441,7 +441,11 @@
     <LibraryClasses>
       PcdLib|MdePkg/Library/BasePcdLibNull/BasePcdLibNull.inf
   }
-  EmulatorPkg/HeapMemory/HeapMemoryDxe.inf
+  EmulatorPkg/HeapMemory/HeapMemoryDxe.inf {
+    <LibraryClasses>
+      DebugLib|MdePkg/Library/BaseDebugLibSerialPort/BaseDebugLibSerialPort.inf
+      SerialPortLib|EmulatorPkg/Library/DxeEmuStdErrSerialPortLib/DxeEmuStdErrSerialPortLib.inf
+  }
 
   FatPkg/EnhancedFatDxe/Fat.inf
 
