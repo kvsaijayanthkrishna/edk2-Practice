@@ -16,9 +16,11 @@
 [Packages]
   EmulatorPkg/EmulatorPkg.dec
   MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
 
 [LibraryClasses]
   UefiDriverEntryPoint
+  DebugLib
 
 [Depex]
   TRUE
